@@ -45,8 +45,8 @@
         </div>
         <div class="content-card">
           <div class="profile-image">
-            <img class="profile-avatar" src="./image/_1698172282197.jpg" alt="Avatar" />
-            <img class="company-logo" src="./image/_1698171572733.jpg" alt="Avatar" />
+            <img class="profile-avatar" src="./image/_1698172282197.jpg" />
+            <img class="company-logo" src="./image/_1698171572733.jpg"  />
           </div>
           <div class="profile-details">
             <div class="username">
@@ -167,34 +167,35 @@ function closeModal() {
   document.querySelector(".modal-container.open").classList.remove("open");
   document.body.classList.remove("modal-open");
 }
-function setFaviconFromProfilePicture() {
-  const tempCanvas = document.createElement('canvas');
-  tempCanvas.width = 100;
-  tempCanvas.height = 100;
-  const tempCtx = tempCanvas.getContext('2d');
-  const img = new Image();
-  img.crossOrigin = 'Anonymous';
-  // Find the profile-avatar image tag with the class
-  const profileAvatarImg = document.querySelector('img.profile-avatar');
 
-  if (profileAvatarImg) {
-    img.onload = function() {
-      tempCtx.beginPath();
-      tempCtx.arc(tempCanvas.width / 2, tempCanvas.height / 2, tempCanvas.width / 2, 0, Math.PI * 2);
-      tempCtx.closePath();
-      tempCtx.clip();
+// function setFaviconFromProfilePicture() {
+//   const tempCanvas = document.createElement('canvas');
+//   tempCanvas.width = 100;
+//   tempCanvas.height = 100;
+//   const tempCtx = tempCanvas.getContext('2d');
+//   const img = new Image();
+//   img.crossOrigin = 'Anonymous';
+//   // Find the profile-avatar image tag with the class
+//   const profileAvatarImg = document.querySelector('img.profile-avatar');
 
-      tempCtx.drawImage(img, 0, 0, tempCanvas.width, tempCanvas.height);
+//   if (profileAvatarImg) {
+//     img.onload = function() {
+//       tempCtx.beginPath();
+//       tempCtx.arc(tempCanvas.width / 2, tempCanvas.height / 2, tempCanvas.width / 2, 0, Math.PI * 2);
+//       tempCtx.closePath();
+//       tempCtx.clip();
 
-      const dataURL = tempCanvas.toDataURL('image/png');
-      const favicon = document.querySelector('link[rel="icon"]');
-      favicon.href = dataURL;
-    };
+//       tempCtx.drawImage(img, 0, 0, tempCanvas.width, tempCanvas.height);
 
-    // Load the image from the src attribute of the profile-avatar img tag
-    img.src = profileAvatarImg.src;
-  }
-}
+//       const dataURL = tempCanvas.toDataURL('image/png');
+//       const favicon = document.querySelector('link[rel="icon"]');
+//       favicon.href = dataURL;
+//     };
+
+//     // Load the image from the src attribute of the profile-avatar img tag
+//     img.src = profileAvatarImg.src;
+//   }
+// }
     
 // close modals on background click
 window.addEventListener("load", function () {
