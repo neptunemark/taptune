@@ -83,7 +83,9 @@ button,img {
     cursor: pointer;
 }
 
-
+.background{
+    cursor: auto;
+}
 
 
 a,img {
@@ -184,7 +186,7 @@ body {
     height: 45px;
     margin-left: 0;
     border-radius: 50%;
-    border: 2px solid #01086d;
+    border: 2px solid #333333;
     position: absolute;
     left: 64%;
     top: 58%;
@@ -201,7 +203,7 @@ body {
     font-weight: 300;
 }
 
-.designation p span {
+.designation p span a{
     color: #5be0f1
 }
 .copy-right{
@@ -413,9 +415,3 @@ body {
 
 
 
-
-
-.tik-icon{
-    font-size: 15px;
-    color: #00aff0;
-}
