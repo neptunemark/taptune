@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Haris Husain</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://assets.taponn.digital/web-app/index-min.css" /> -->
+    <link rel="icon" type="image/x-icon" href="https://assets.taponn.digital/web-app/taponn-logo.ico" />
+    
+    <link rel="stylesheet" href="tapo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- demo font -->
+  <link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-regular.css"
+>
+
+<link
+  rel="stylesheet"
+  href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css"
+>
+<!-- demo font -->
+
+
+  
+  </head>
+
+  <body>
+    <div>
+      <main id="product-data-1" class="main">
+        <div class="profile-card">
+          <img src="./image/textured-black-background-vector.jpg" alt="Avatar" />
+        </div>
+        <div class="content-card">
+          <div class="profile-image">
+            <img class="profile-avatar" src="./image/_1698172282197.jpg" alt="Avatar" />
+            <img class="company-logo" src="./image/_1698171572733.jpg" alt="Avatar" />
+          </div>
+          <div class="profile-details">
+            <div class="username">
+              <p>Haris Husain <i class="fa-sharp fa-solid fa-badge-check" style="color: #326dd2;"></i></p> 
+            </div>
+            <div class="designation">
+              <p>Managing Director <span> @ Aiswarya furniture </span></p>
+            </div>
+            <div class="personalBio">
+              <p></p>
+            </div>
+            <div class="profile-button" id="profile-button">
+              <button class="connect-btn" onclick="openModal('modal-1')">connect with me</button>
+              <button class="connect-btn" onclick="saveData()">Save to phone</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-media-links">
+          <div class="row1">
+            		<div class="wrapper">
+            		<img src="./image/phone.png" alt="Phone" onclick="sendInsights('Phone',`65380af6ca3518004ddaf362`); window.open('tel:+917034499661','_self');" />
+              <span class="alt-text">Phone</span></div>
+            		<div class="wrapper">
+            		<img src="./image/email.png" alt="Email" onclick="sendInsights('Email',`65380b20ca3518004ddaf367`); window.open('mailto:aiswaryafurnitureclt@gmail.com','_self');" />
+              <span class="alt-text">Email</span></div>
+            		<div class="wrapper">
+            		<img src="./image/website.png" alt="Website" onclick="sendInsights('Website',`65380b34ca3518004ddaf369`); window.open('https://www. aiswaryahome.com','_self');" />
+              <span class="alt-text">Website</span></div>
+            		<div class="wrapper">
+            		<img src="./image/whatsapp.png" alt="WhatsApp" onclick="sendInsights('WhatsApp',`65380b40ca3518004ddaf36d`); window.open('https://api.whatsapp.com/send?phone&#x3D;919946467657','_self');" />
+              <span class="alt-text">WhatsApp</span></div>
+            		<div class="wrapper">
+            		<img src="./image/instagram.png" alt="Instagram" onclick="sendInsights('Instagram',`65380b74ca3518004ddaf371`); window.open('https://instagram.com/aiswarya.home','_self');" />
+              <span class="alt-text">Instagram</span></div>
+            		<div class="wrapper">
+            		<img src="./image/google-review.png" alt="Google Reviews" onclick="sendInsights('Google Reviews',`65380bdbca3518004ddaf373`); window.open('https://www.google.com/search?client=ms-android-tmus-us-revc&sca_esv=576160195&cs=0&output=search&q=Aiswarya+Home&ludocid=12918212639083082175&lsig=AB86z5WHL-mLW4csy2uXqVojXjKK&kgs=ce939a45ffbf9f70&shndl=-1&shem=lbsc,lsp&source=sh/x/loc/act/m1/2#cobssid=s&lrd=0x3ba669a15c90fb55:0xb346b5f39d8231bf,3,,,,','_self');" />
+              <span class="alt-text">Google Reviews</span></div>
+          
+          </div>
+
+          <div class="get-button">
+            <a href="www.neptunemark.com"><img src="./image/Neptune-mark-logo-2.png" alt=""></a>
+            
+          </div>
+          <p class="copy-right">Copyright © 2010-2023 <span>NeptuneMark</span>, All rights reserved</p>
+        </div>
+
+        
+      </main>
+    </div>
+    
+     <div id="modal-1" class="modal-container">
+          <div class="modal-body">
+            <span class="close-modal" onclick="closeModal()">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                <path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path>
+              </svg>
+            </span>
+            <div class="modal-header">
+              <h3>Share your info with Haris Husain</h3>
+            </div>
+            <div class="divider"></div>
+
+            <form id="form" autocomplete="on">
+              <div class="input-group">
+                <input required id="firstName" type="text" name="firstName" autocomplete="name" class="input" />
+                <label for="firstName" class="user-label">Name</label>
+              </div>
+              
+              <div class="input-group">
+                <input required id="cardNumber" type="text" name="cardNumber" autocomplete="tel" class="input" />
+                <label for="cardNumber" class="user-label">Mobile</label>
+              </div>
+              
+              <div class="input-group">
+                <input required id="cardEmailAddress" type="text" name="cardEmailAddress" autocomplete="email" class="input" />
+                <label for="cardNumber" class="user-label">Email</label>
+              </div>
+              
+              <div class="input-group">
+                <input id="cardjobTitle" type="text" name="cardjobTitle" autocomplete="organization-title" class="input" />
+                <label for="cardjobTitle" class="user-label">Designation</label>
+              </div>
+              
+              <div class="input-group">
+                <input id="cardWebsite" type="text" name="cardWebsite" autocomplete="organization" class="input" />
+                <label for="cardWebsite" class="user-label">Company</label>
+              </div>
+              
+              <div class="input-group">
+                <input id="personalBio" type="text" name="personalBio" autocomplete="bio" class="input" />
+                <label for="personalBio" class="user-label">Note</label>
+              </div>
+
+                <input id="cardType" type="hidden" name="cardType" value="userFormInfo" />
+
+              <div type="submit" onsubmit="onFormSubmit()" class="connect-button">
+                <button id="submitButton">Connect</button>
+              </div>
+            </form>
+            <span class="error_message" id="error_message"></span>
+            <div class="disclaimer">
+              <p>Neptune does not sell or share your data</p>
+            </div>
+          </div>
+        </div> 
+  </body>
+  <script>
+    // open modal by id
+function openModal(id) {
+  document.getElementById(id).classList.add("open");
+  document.body.classList.add("modal-open");
+}
+
+// close currently open modal
+function closeModal() {
+  document.querySelector(".modal-container.open").classList.remove("open");
+  document.body.classList.remove("modal-open");
+}
+function setFaviconFromProfilePicture() {
+  const tempCanvas = document.createElement('canvas');
+  tempCanvas.width = 100;
+  tempCanvas.height = 100;
+  const tempCtx = tempCanvas.getContext('2d');
+  const img = new Image();
+  img.crossOrigin = 'Anonymous';
+  // Find the profile-avatar image tag with the class
+  const profileAvatarImg = document.querySelector('img.profile-avatar');
+
+  if (profileAvatarImg) {
+    img.onload = function() {
+      tempCtx.beginPath();
+      tempCtx.arc(tempCanvas.width / 2, tempCanvas.height / 2, tempCanvas.width / 2, 0, Math.PI * 2);
+      tempCtx.closePath();
+      tempCtx.clip();
+
+      tempCtx.drawImage(img, 0, 0, tempCanvas.width, tempCanvas.height);
+
+      const dataURL = tempCanvas.toDataURL('image/png');
+      const favicon = document.querySelector('link[rel="icon"]');
+      favicon.href = dataURL;
+    };
+
+    // Load the image from the src attribute of the profile-avatar img tag
+    img.src = profileAvatarImg.src;
+  }
+}
+    
+// close modals on background click
+window.addEventListener("load", function () {
+  document.addEventListener("click", (event) => {
+    if (event.target.classList.contains("modal-container")) {
+      closeModal();
+    }
+  });
+  
+});
+window.onload = function () {
+  var canonical_identifier = `65380a48ca3518004ddaf358`
+  if(canonical_identifier != "64e4a68bc6c3a8004d5dee20"){
+    document.getElementById("profile-button").innerHTML=`<button class="connect-btn" onclick="openModal('modal-1')">connect with me</button>
+              <button class="connect-btn" onclick="saveData()">Save to phone</button>`;
+    document.getElementById("submitButton").innerHTML="Connect";
+    //setTimeout(function () {
+      //openModal("modal-1");
+    //}, 10000);
+  }else{
+    document.getElementById("profile-button").innerHTML=`<button class="connect-btn" onclick="openModal('modal-1')">Register</button>`;
+    document.getElementById("submitButton").innerHTML="Register Now";
+    setTimeout(function () {
+      openModal("modal-1");
+    }, 0);
+  }
+  const container = document.querySelector('.profile-card');
+  const img = container.querySelector('img');
+  if (img.clientHeight > 212) {
+    const margin = (img.clientHeight - 212) / 2;
+    img.style.marginTop = `-${margin}px`;
+  }
+  setFaviconFromProfilePicture();
+};
+function showError(message) {
+  document.getElementById("error_message").style.display = 'block';
+  document.getElementById("error_message").innerHTML = message;
+ setTimeout (function(){   document.getElementById("error_message").style.display = 'none';document.getElementById("error_message").innerHTML='';},2500)
+}
+function convertImageToBase64() {
+  // Find the image element with class "profile-avatar"
+  const imageElement = document.querySelector('.profile-avatar');
+
+  if (imageElement) {
+    const imageUrl = imageElement.src;
+
+    // Create an HTML canvas element
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+
+    // Create an image element
+    const image = new Image();
+
+    // Set the crossOrigin property to "Anonymous" to avoid CORS issues
+    image.crossOrigin = 'Anonymous';
+
+    return new Promise((resolve, reject) => {
+      // When the image is loaded, draw it on the canvas
+      image.onload = function() {
+        try {
+          canvas.width = 96;
+          canvas.height = 96;
+          context.drawImage(image, 0, 0, 96, 96);
+
+          // Get the base64 string from the canvas
+          const base64String = canvas.toDataURL().split(',')[1];;
+          resolve(base64String);
+        } catch (error) {
+          console.log(error)
+        }
+      };
+
+      image.onerror = function() {
+        reject('');
+      };
+
+      // Set the source of the image to the image URL
+      image.src = imageUrl;
+    });
+  } else {
+    return Promise.reject('');
+  }
+}
+// Form Handling
+let form = document.querySelector("#form");
+form.addEventListener("submit", onFormSubmit);
+
+function onFormSubmit(event) {
+  
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const formdata = JSON.stringify(Object.fromEntries(data.entries()));
+
+  fetch(
+    `https://api.taponn.digital/users/business-lists-without-app?profilename=tpo344166`,
+    {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: formdata,
+    }
+  )
+    .then((res) => 
+      res.json()
+    )
+    .then((data)=>
+      console.log(data)
+    )
+    .then(()=>closeModal())
+    .catch((err) => {
+      console.log(err);
+      showError("Unable to save information. Please try again");
+    });
+}
+function saveData(event) {
+   var phoneList = "";
+  var emailList = "";
+  var personalBio = document.getElementsByClassName("personalBio")[0].getElementsByTagName("p")[0].innerHTML;
+  personalBio = personalBio.replace(/(?:\r\n|\r|\n)/g, '\\n');
+  var row1 = document.getElementsByClassName("row1")[0];
+  var childDivs = Array.from(row1.querySelectorAll(".wrapper"));
+  childDivs.forEach(function (childDiv){
+    var altText = childDiv.querySelector("img").getAttribute("alt");
+    if(altText === "Phone"){
+      var onClickAttr = childDiv.querySelector("img").getAttribute("onClick");
+      var phoneNumber = onClickAttr.match(/tel:(\+?\d+)/);
+      if(phoneNumber){
+        phoneList += "\nTEL;TYPE=work,voice:"
+        phoneList += phoneNumber[1] 
+      }
+    }
+    if(altText === "Email"){
+      var onClickAttr = childDiv.querySelector("img").getAttribute("onClick");
+      var email = onClickAttr.match(/mailto:([^'"]+)/);
+      if(email){
+        emailList += "\nEMAIL:"
+        emailList += email[1] 
+      }
+    }
+  });
+   convertImageToBase64()
+  .then((base64String) => {
+    // create a vcard file
+    var vcard =
+      "BEGIN:VCARD\nVERSION:3.0\nFN:" +
+      "Haris Husain" +
+      "\nN:;" +
+      "Haris Husain" +
+      phoneList +
+      "\nTITLE:" +
+      "Managing Director " +
+      "\nURL;TYPE=TapOnn - Digital Business Card:" +
+      `https://taponn.me/tpo344166` +
+      emailList +
+      "\nORG:" +
+      "Aiswarya furniture " +
+      "\nPHOTO;ENCODING=BASE64:" +
+      base64String +
+      "\nNOTE:" +
+      personalBio +
+      "\nEND:VCARD";
+    var blob = new Blob([vcard], { type: "text/vcard" });
+    var url = URL.createObjectURL(blob);
+
+    const newLink = document.createElement("a");
+    newLink.download = "Haris Husain" + ".vcf";
+    newLink.textContent = "Haris Husain";
+    newLink.href = url;
+
+    newLink.click();
+   })
+  .catch((error) => {
+    // Handle errors
+    console.log(error);
+    showError("Unable to download vCard file. Please try again");
+  });
+}
+function sendInsights(type,id){
+  var myHeaders = new Headers();
+  myHeaders.append("accept", "application/json");
+
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    redirect: 'follow'
+  };
+
+  fetch("https://api.taponn.digital/users/insights?profileId="+"65380a48ca3518004ddaf358"+"&datalistId="+id, requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+}
+  </script>
+</html>
